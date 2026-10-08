@@ -4,6 +4,12 @@
 
 All notable changes to Tab Groups Pro are documented here.
 
+## [2.0.1] - 2026-10-09
+
+### Changed
+
+- Simplified the introductory Marketplace description by removing a duplicated attribution and licensing notice. The full attribution remains in the acknowledgement and license sections.
+
 ## [2.0.0] - 2026-10-08
 
 ### Added

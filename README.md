@@ -4,8 +4,6 @@
 
 Create persistent file groups for each VS Code workspace and reopen the files you need in a predictable order.
 
-Tab Groups Pro is maintained by Shelus2021 and is based on the original [VS Tab Groups project](https://github.com/bentodaniel/vs-tab-groups). Before redistribution, review the licensing notes in [PUBLISHING.md](PUBLISHING.md).
-
 ## Features
 
 - Create, rename, reorder, clear, and remove file groups.

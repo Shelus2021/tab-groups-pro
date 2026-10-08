@@ -4,8 +4,6 @@
 
 为每个 VS Code 工作区创建可持久保存的文件分组，并按确定的顺序重新打开所需文件。
 
-Tab Groups Pro 由 Shelus2021 维护，基于原始的 [VS Tab Groups 项目](https://github.com/bentodaniel/vs-tab-groups)。重新分发前，请先阅读 [PUBLISHING.zh-CN.md](PUBLISHING.zh-CN.md) 中的许可证说明。
-
 ## 功能
 
 - 创建、重命名、排序、清空和删除文件分组。
