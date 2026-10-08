@@ -1,0 +1,287 @@
+{
+	"name": "tab-groups-pro",
+	"displayName": "Tab Groups Pro",
+	"description": "Create and manage tab groups to improve your development workflow.",
+	"keywords": [
+		"productivity",
+		"tabs",
+		"tab groups",
+		"file groups"
+	],
+	"icon": "resources/tab-groups-pro.png",
+	"galleryBanner": {
+		"color": "#151B2B",
+		"theme": "dark"
+	},
+	"version": "2.0.0",
+	"publisher": "Shelus2021",
+	"author": {
+		"name": "Shelus2021",
+		"email": "shelus2021@foxmail.com"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Shelus2021/tab-groups-pro.git"
+	},
+	"homepage": "https://github.com/Shelus2021/tab-groups-pro#readme",
+	"bugs": {
+		"url": "https://github.com/Shelus2021/tab-groups-pro/issues"
+	},
+	"engines": {
+		"vscode": "^1.74.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onView:tab_groups_pro"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"configuration": {
+			"title": "Tab Groups Pro",
+			"properties": {
+				"tab-groups-pro.closeTabsOnOpenGroup": {
+					"type": "boolean",
+					"default": false,
+					"description": "Close currently open tabs when opening a tab group."
+				},
+				"tab-groups-pro.closeTabsOnAddAllToGroup": {
+					"type": "boolean",
+					"default": false,
+					"description": "Close currently open tabs after adding all of them to a group."
+				}
+			}
+		},
+		"viewsContainers": {
+			"activitybar": [
+				{
+					"id": "tab-groups-pro-view-container",
+					"title": "Tab Groups Pro",
+					"icon": "resources/tab-groups.svg"
+				}
+			]
+		},
+		"views": {
+			"tab-groups-pro-view-container": [
+				{
+					"id": "tab_groups_pro",
+					"name": "Tab Groups Pro"
+				}
+			]
+		},
+		"viewsWelcome": [
+			{
+				"view": "tab_groups_pro",
+				"contents": "No tab groups yet.\n[Create Group](command:tab_groups_pro.addTabGroup)\n[Add All Open Tabs](command:tab_groups_pro.addAllToGroup)"
+			}
+		],
+		"menus": {
+			"view/title": [
+				{
+					"command": "tab_groups_pro.addAllToGroup",
+					"when": "view == tab_groups_pro",
+					"group": "navigation@0"
+				},
+				{
+					"command": "tab_groups_pro.collapseAllGroups",
+					"when": "view == tab_groups_pro",
+					"group": "navigation@1"
+				}
+			],
+			"view/item/context": [
+				{
+					"command": "tab_groups_pro.addEntry",
+					"when": "view == tab_groups_pro && viewItem == tgp_root_item",
+					"group": "inline@1"
+				},
+				{
+					"command": "tab_groups_pro.moveUp",
+					"when": "view == tab_groups_pro && viewItem == tgp_root_item",
+					"group": "inline@2"
+				},
+				{
+					"command": "tab_groups_pro.moveDown",
+					"when": "view == tab_groups_pro && viewItem == tgp_root_item",
+					"group": "inline@3"
+				},
+				{
+					"command": "tab_groups_pro.openTabGroup",
+					"when": "view == tab_groups_pro && viewItem == tgp_root_item",
+					"group": "tab_groups_pro_0@0"
+				},
+				{
+					"command": "tab_groups_pro.closeTabGroup",
+					"when": "view == tab_groups_pro && viewItem == tgp_root_item",
+					"group": "tab_groups_pro_0@1"
+				},
+				{
+					"command": "tab_groups_pro.copyTabsPathInGroup",
+					"when": "view == tab_groups_pro && viewItem == tgp_root_item",
+					"group": "tab_groups_pro_1@0"
+				},
+				{
+					"command": "tab_groups_pro.copyTabsRelativePathInGroup",
+					"when": "view == tab_groups_pro && viewItem == tgp_root_item",
+					"group": "tab_groups_pro_1@1"
+				},
+				{
+					"command": "tab_groups_pro.editTabGroupName",
+					"when": "view == tab_groups_pro && viewItem == tgp_root_item",
+					"group": "tab_groups_pro_2@0"
+				},
+				{
+					"command": "tab_groups_pro.clearTabsInGroup",
+					"when": "view == tab_groups_pro && viewItem == tgp_root_item",
+					"group": "tab_groups_pro_3@0"
+				},
+				{
+					"command": "tab_groups_pro.removeTabGroup",
+					"when": "view == tab_groups_pro && viewItem == tgp_root_item",
+					"group": "tab_groups_pro_3@1"
+				},
+				{
+					"command": "tab_groups_pro.moveUp",
+					"when": "view == tab_groups_pro && viewItem == tgp_child_item",
+					"group": "inline@0"
+				},
+				{
+					"command": "tab_groups_pro.moveDown",
+					"when": "view == tab_groups_pro && viewItem == tgp_child_item",
+					"group": "inline@1"
+				},
+				{
+					"command": "tab_groups_pro.openTab",
+					"when": "view == tab_groups_pro && viewItem == tgp_child_item",
+					"group": "tab_groups_pro_3@0"
+				},
+				{
+					"command": "tab_groups_pro.closeTab",
+					"when": "view == tab_groups_pro && viewItem == tgp_child_item",
+					"group": "tab_groups_pro_3@1"
+				},
+				{
+					"command": "tab_groups_pro.removeTab",
+					"when": "view == tab_groups_pro && viewItem == tgp_child_item",
+					"group": "tab_groups_pro_4@0"
+				}
+			],
+			"editor/title/context": [
+				{
+					"command": "tab_groups_pro.addEntryToGroup",
+					"when": "resourceScheme == file"
+				}
+			],
+			"explorer/context": [
+				{
+					"command": "tab_groups_pro.addEntryToGroup",
+					"when": "resourceScheme == file"
+				}
+			]
+		},
+		"commands": [
+			{
+				"command": "tab_groups_pro.expandAllGroups",
+				"title": "Tab Groups Pro: Expand All Groups",
+				"icon": "$(expand-all)"
+			},
+			{
+				"command": "tab_groups_pro.collapseAllGroups",
+				"title": "Tab Groups Pro: Collapse All Groups",
+				"icon": "$(collapse-all)"
+			},
+			{
+				"command": "tab_groups_pro.addTabGroup",
+				"title": "Tab Groups Pro: Add a New Group",
+				"icon": "$(add)"
+			},
+			{
+				"command": "tab_groups_pro.removeAllGroups",
+				"title": "Tab Groups Pro: Remove All Groups",
+				"icon": "$(close-all)"
+			},
+			{
+				"command": "tab_groups_pro.addEntry",
+				"title": "Add Tab",
+				"icon": "$(new-file)"
+			},
+			{
+				"command": "tab_groups_pro.openTabGroup",
+				"title": "Open Group",
+				"icon": "$(chrome-restore)"
+			},
+			{
+				"command": "tab_groups_pro.closeTabGroup",
+				"title": "Close Group"
+			},
+			{
+				"command": "tab_groups_pro.copyTabsPathInGroup",
+				"title": "Copy Tabs Path"
+			},
+			{
+				"command": "tab_groups_pro.copyTabsRelativePathInGroup",
+				"title": "Copy Tabs Relative Path"
+			},
+			{
+				"command": "tab_groups_pro.editTabGroupName",
+				"title": "Edit Group Name"
+			},
+			{
+				"command": "tab_groups_pro.clearTabsInGroup",
+				"title": "Clear Group"
+			},
+			{
+				"command": "tab_groups_pro.removeTabGroup",
+				"title": "Remove Group",
+				"icon": "$(close)"
+			},
+			{
+				"command": "tab_groups_pro.moveUp",
+				"title": "Move Up",
+				"icon": "$(chevron-up)"
+			},
+			{
+				"command": "tab_groups_pro.moveDown",
+				"title": "Move Down",
+				"icon": "$(chevron-down)"
+			},
+			{
+				"command": "tab_groups_pro.openTab",
+				"title": "Open Tab"
+			},
+			{
+				"command": "tab_groups_pro.closeTab",
+				"title": "Close Tab"
+			},
+			{
+				"command": "tab_groups_pro.removeTab",
+				"title": "Remove Tab from Group"
+			},
+			{
+				"command": "tab_groups_pro.item_clicked",
+				"title": "View Group Item"
+			},
+			{
+				"command": "tab_groups_pro.addEntryToGroup",
+				"title": "Tab Groups Pro: Add to Tab Group"
+			},
+			{
+				"command": "tab_groups_pro.addAllToGroup",
+				"title": "Tab Groups Pro: Add All Opened Tabs to Group",
+				"icon": "$(add)"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run check",
+		"check": "node --check out/extension.js && node --check out/TreeDataProvider.js && node --check out/TreeItem.js && node --check out/Util.js",
+		"test": "npm run check"
+	},
+	"devDependencies": {
+		"@vscode/vsce": "^4.0.0"
+	},
+	"allowScripts": {
+		"@vscode/vsce-sign@2.1.0": true
+	}
+}

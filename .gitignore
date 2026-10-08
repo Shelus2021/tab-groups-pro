@@ -1,0 +1,5 @@
+node_modules/
+*.vsix
+.vsixmanifest
+.DS_Store
+npm-debug.log*

@@ -54,4 +54,3 @@ Based on the original work by [bentodaniel](https://github.com/bentodaniel/vs-ta
 Original additions and modifications authored by Shelus2021 are provided under the MIT License. Portions derived from the upstream VS Tab Groups project remain subject to the rights of their respective copyright holders because no upstream license was found when this version was prepared.
 
 See [LICENSE](LICENSE) and [NOTICE.md](NOTICE.md) for the exact scope. If you believe this project infringes your rights, contact [shelus2021@foxmail.com](mailto:shelus2021@foxmail.com).
-

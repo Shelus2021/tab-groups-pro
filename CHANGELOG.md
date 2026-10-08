@@ -1,0 +1,66 @@
+# Changelog
+
+[简体中文](CHANGELOG.zh-CN.md) | English
+
+All notable changes to Tab Groups Pro are documented here.
+
+## [2.0.0] - 2026-10-08
+
+### Added
+
+- Added a dedicated Tab Groups Pro Marketplace icon and editable SVG source.
+- Added a scoped MIT license for Shelus2021-authored contributions, upstream attribution, and a rights-holder contact notice.
+- Remembered expanded and collapsed state for each group.
+- Clear-group action that keeps the group itself.
+- Commands to copy all absolute or relative file paths from a group.
+- Optional closing of open tabs after adding all tabs to a group.
+- File-theme icons, relative folder descriptions, full-path tooltips, and group file counts.
+- Active-editor tracking in expanded groups.
+- Single-click preview and double-click pinning behavior.
+
+### Changed
+
+- Open groups in their saved order and wait for every document operation.
+- Show only currently open tabs when adding entries from a group.
+- Hide files and groups that would create duplicate entries.
+- Keep new groups collapsed by default.
+- Remove empty groups without an extra confirmation.
+- Use built-in VS Code product icons for actions.
+- Default `tab-groups-pro.closeTabsOnOpenGroup` to `false`.
+- Improve command names, menus, prompts, and error messages.
+- Dispose commands, views, event listeners, emitters, and the output channel cleanly.
+
+### Fixed
+
+- Group renaming now updates child-parent references used by reorder and removal actions.
+- Explorer context-menu files can be added without relying on the active editor.
+- File names containing spaces are no longer truncated.
+- Group expansion state uses the correct VS Code enum and migrates previously saved Boolean state.
+- Cancelling new-group creation no longer adds a file to the last existing group.
+- Workspace-relative paths now use platform-safe path handling.
+
+### Removed
+
+- Recursive workspace scanning and the legacy `ignorePaths` setting.
+- The non-functional nesting-depth setting.
+- The unreliable command that synchronized group order from editor tabs.
+- Custom colored group icons and bundled action PNGs.
+
+## Original releases
+
+### [1.3.0] - 2024-08-04
+
+- Added group renaming.
+
+### [1.2.0] - 2024-04-04
+
+- Added synchronization of editor-tab order to a group.
+- Fixed the extension name in the UI.
+
+### [1.1.0] - 2024-03-16
+
+- Added expand/collapse, group and file reordering, and commands for adding open tabs.
+
+### [1.0.0] - 2023-01-03
+
+- Initial release.
