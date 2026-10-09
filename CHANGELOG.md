@@ -4,6 +4,12 @@
 
 All notable changes to Tab Groups Pro are documented here.
 
+## [2.0.2] - 2026-10-09
+
+### Added
+
+- Added Marketplace preview images for the empty state and group actions.
+
 ## [2.0.1] - 2026-10-09
 
 ### Changed
