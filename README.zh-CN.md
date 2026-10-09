@@ -2,9 +2,9 @@
 
 简体中文 | [English](README.md)
 
-[从 Visual Studio Marketplace 安装 Tab Groups Pro](https://marketplace.visualstudio.com/items?itemName=Shelus2021.tab-groups-pro)
-
 为每个 VS Code 工作区创建可持久保存的文件分组，并按确定的顺序重新打开所需文件。
+
+[从 Visual Studio Marketplace 安装 Tab Groups Pro](https://marketplace.visualstudio.com/items?itemName=Shelus2021.tab-groups-pro)
 
 ## 功能
 
