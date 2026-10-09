@@ -18,13 +18,9 @@
 
 ## 功能预览
 
-### 创建第一个分组
-
-![Tab Groups Pro 空白状态，可创建分组或添加所有已打开标签页](screenshots/empty-state.png)
-
-### 管理分组文件
-
-![Tab Groups Pro 展示分组文件及分组操作菜单](screenshots/group-actions.png)
+| 创建第一个分组 | 管理分组文件 |
+| --- | --- |
+| <img src="screenshots/empty-state.png" alt="Tab Groups Pro 空白状态，可创建分组或添加所有已打开标签页" width="360"> | <img src="screenshots/group-actions.png" alt="Tab Groups Pro 展示分组文件及分组操作菜单" width="360"> |
 
 ## 快速开始
 

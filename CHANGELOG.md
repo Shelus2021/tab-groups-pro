@@ -4,6 +4,12 @@
 
 All notable changes to Tab Groups Pro are documented here.
 
+## [2.0.3] - 2026-10-09
+
+### Changed
+
+- Displayed the two preview images side by side at a smaller size.
+
 ## [2.0.2] - 2026-10-09
 
 ### Added

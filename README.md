@@ -18,13 +18,9 @@ Create persistent file groups for each VS Code workspace and reopen the files yo
 
 ## Preview
 
-### Create your first group
-
-![Tab Groups Pro empty state with actions to create a group or add all open tabs](screenshots/empty-state.png)
-
-### Manage grouped files
-
-![Tab Groups Pro showing grouped files and the group actions menu](screenshots/group-actions.png)
+| Create your first group | Manage grouped files |
+| --- | --- |
+| <img src="screenshots/empty-state.png" alt="Tab Groups Pro empty state with actions to create a group or add all open tabs" width="360"> | <img src="screenshots/group-actions.png" alt="Tab Groups Pro showing grouped files and the group actions menu" width="360"> |
 
 ## Getting started
 
