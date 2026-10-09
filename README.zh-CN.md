@@ -16,6 +16,16 @@
 - 在已展开的分组中跟随当前活动编辑器。
 - 添加文件时自动排除会造成重复的文件和分组。
 
+## 功能预览
+
+### 创建第一个分组
+
+![Tab Groups Pro 空白状态，可创建分组或添加所有已打开标签页](screenshots/empty-state.png)
+
+### 管理分组文件
+
+![Tab Groups Pro 展示分组文件及分组操作菜单](screenshots/group-actions.png)
+
 ## 快速开始
 
 1. 在 VS Code 中打开文件夹或工作区。

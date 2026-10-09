@@ -16,6 +16,16 @@ Create persistent file groups for each VS Code workspace and reopen the files yo
 - Follow the active editor in expanded groups.
 - Avoid duplicate file and group choices while adding files.
 
+## Preview
+
+### Create your first group
+
+![Tab Groups Pro empty state with actions to create a group or add all open tabs](screenshots/empty-state.png)
+
+### Manage grouped files
+
+![Tab Groups Pro showing grouped files and the group actions menu](screenshots/group-actions.png)
+
 ## Getting started
 
 1. Open a folder or workspace in VS Code.
