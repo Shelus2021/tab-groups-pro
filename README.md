@@ -2,6 +2,8 @@
 
 [简体中文](README.zh-CN.md) | English
 
+[Install Tab Groups Pro from Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=Shelus2021.tab-groups-pro)
+
 Create persistent file groups for each VS Code workspace and reopen the files you need in a predictable order.
 
 ## Features
